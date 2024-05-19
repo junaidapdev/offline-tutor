@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(
-          "min-h-screen font-Bricolage_Grotesque antialiased",
+          "min-h-screen font-Bricolage_Grotesque w-100",
           bricolage_grotesque.variable
         )}>
           <Header />
