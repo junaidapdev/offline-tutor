@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque} from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/cn";
+import Header from '../components/custom/Header';
 
 const bricolage_grotesque = Bricolage_Grotesque({ subsets: ["latin"],  variable: "--font-Bricolage_Grotesque" });
 
@@ -18,9 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(
-          "min-h-screen bg-background font-Bricolage_Grotesque antialiased",
+          "min-h-screen font-Bricolage_Grotesque antialiased",
           bricolage_grotesque.variable
-        )}>{children}</body>
+        )}>
+          <Header />
+          <main>
+          {children}
+          </main>
+        </body>
     </html>
   );
 }
