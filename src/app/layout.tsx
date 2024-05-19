@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Bricolage_Grotesque} from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] });
+const bricolage_grotesque = Bricolage_Grotesque({ subsets: ["latin"],  variable: "--font-Bricolage_Grotesque" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(
+          "min-h-screen bg-background font-Bricolage_Grotesque antialiased",
+          bricolage_grotesque.variable
+        )}>{children}</body>
     </html>
   );
 }
