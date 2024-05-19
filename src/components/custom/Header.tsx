@@ -194,7 +194,7 @@ const Header = () => {
         <nav
           className={`${
             isMobileMenuOpen ? "block" : "hidden"
-          } lg:flex lg:items-center lg:gap-6 absolute lg:relative top-14 lg:top-0 right-0 bg-white lg:bg-transparent w-full lg:w-auto p-4 lg:p-0`}
+          } lg:flex lg:items-center lg:gap-6 absolute  right-4 lg:relative top-14 lg:top-0 bg-white lg:bg-transparent w-full lg:w-auto p-4 lg:p-0`}
         >
           <Link
             className="text-white text-sm font-medium hover:underline underline-offset-4 block lg:inline-block mt-2 lg:mt-0"
