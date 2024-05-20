@@ -22,7 +22,7 @@ const FindTutor = () => {
           <div className="mx-auto grid max-w-5xl grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:gap-6">
             <Link
               className="group flex h-20 w-full items-center justify-center rounded-lg bg-white p-4 shadow-sm transition-all hover:bg-gray-100 hover:shadow-md dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:shadow-lg"
-              href="#"
+              href="/Maths"
             >
               <div className="flex flex-col items-center justify-center space-y-1">
                 {/* <CalculatorIcon className="h-8 w-8 text-gray-500 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-gray-50" /> */}
